@@ -10,7 +10,7 @@ Foundational concepts are:
 * `Flattening` - Join arrays (unnested as rows) with their parent table
 
 ## Data Invironment: Google Analytics Data
-[Export Schema](https://support.google.com/analytics/answer/3437719) -  
+[Export Schema](https://support.google.com/analytics/answer/3437719)  
 [Example Data](https://console.cloud.google.com/bigquery?folder&p=bigquery-public-data&d=google_analytics_sample&t=ga_sessions_20170801&page=table)
 
 Concepts focus on the data structure, not the possible settings of the tool:
@@ -21,7 +21,7 @@ Concepts focus on the data structure, not the possible settings of the tool:
 * tbd ...
 
 ## Data Environment: Firebase Data
-[Export Schema](https://support.google.com/firebase/answer/7029846?hl=en&ref_topic=7029512) - 
+[Export Schema](https://support.google.com/firebase/answer/7029846?hl=en&ref_topic=7029512)    
 [Example Data](https://console.cloud.google.com/bigquery?folder&p=firebase-public-project&d=analytics_153293282&t=events_20181003&page=table)
 
 Concepts focus on the data structure, not the possible settings of the tool:
