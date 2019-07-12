@@ -21,7 +21,7 @@
           <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
           <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
           <nav>
-            {% for item in site.data.samplelist.toc %}
+            {% for item in site.data.navigation.toc %}
 	    <h3>{{ item.title }}</h3>
 	      <ul>
 		{% for entry in item.subfolderitems %}
