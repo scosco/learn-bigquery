@@ -22,12 +22,11 @@
           <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
           <nav>
             {% for item in site.data.navigation.toc %}
-	    <h3>{{ item.title }}</h3>
-	      <ul>
+	    {{ item.title }}: 
 		{% for entry in item.subfolderitems %}
-		  <li><a href="{{ entry.url }}">{{ entry.page }}</a></li>
+		  <a href="{{ entry.url }}">{{ entry.page }}</a> 
 		{% endfor %}
-	      </ul>
+	      <br/>
 	  {% endfor %}
           </nav>
         </header>
