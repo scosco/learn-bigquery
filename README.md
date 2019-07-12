@@ -27,3 +27,13 @@ Concepts focus on the data structure, not the possible settings of the tool:
 Concepts focus on the data structure, not the possible settings of the tool:
 * Events and event_params
 * tbd ...
+
+## Example
+
+```sql
+SELECT
+  column
+FROM
+  table
+WHERE column = 'test'
+```
