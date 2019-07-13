@@ -62,4 +62,5 @@ Try it out! Uncomment to see the difference when querying for different levels.
 ## Structs in Tables
 
 In BigQuery table schemas structs are called `RECORD`. You can see in the following rows which fields belong to the struct.
+
 ![record in a table](foundation/img/bq-record.png)
