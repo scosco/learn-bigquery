@@ -6,7 +6,7 @@ toc:
       - page: WITH
         url: foundation/WITH.html
       - page: Structs
-        url: #
+        url: foundation/structs.html
       - page: Arrays
         url: #
       - page: Subqueries
