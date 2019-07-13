@@ -1,12 +1,14 @@
 toc:
   - title: Foundation
     subfolderitems:
+      - page: General Introduction
+        url: foundation/general-intro.html
+      - page: WITH
+        url: foundation/WITH.html
       - page: Structs
         url: #
       - page: Arrays
         url: #
-      - page: WITH
-        url: foundation/WITH.html
       - page: Subqueries
         url: #
       - page: Flatten
