@@ -66,6 +66,7 @@ SELECT
 FROM
   `bigquery-public-data.austin_311.311_service_requests`
 WHERE 
+  -- created_date comes from the parent FROM while startDate and endDate come from the subqueries FROM
   (SELECT EXTRACT(DATE from created_date) BETWEEN startDate AND endDate FROM const) 
 GROUP BY
   1
