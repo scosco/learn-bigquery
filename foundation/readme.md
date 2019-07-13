@@ -1,6 +1,6 @@
 # Foundations
 
-Things we'll cover:
+Things to master:
  - Structs
  - Arrays
  - WITH
