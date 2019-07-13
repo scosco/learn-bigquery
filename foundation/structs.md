@@ -19,7 +19,7 @@ Defining anonymous structs is also possible and may come in handy sometimes:
 ```sql
 SELECT (45, 6, 'abc')
 ```
-These statements do not define the type of the fields - if you want to learn about that please read cloud.google.com/bigquery/docs/reference/standard-sql/data-types#struct-type 
+These statements do not define the type of the fields - if you want to learn about that please read the [GCP docs](https://cloud.google.com/bigquery/docs/reference/standard-sql/data-types#struct-type). 
 
 ### Example
 In this example we create a one-row temporary table using WITH and select an element from the struct:
