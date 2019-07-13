@@ -20,14 +20,14 @@ So, basically we create our own temporary tables (on run-time only) using querie
 
 ## When to use WITH
 
-In the example above we see subQ1 and subQ2 - first we define them as subqueries. But later we treat them like normal tables. This is quite powerful because we only define them once and then don't have to think about them anymore. We can save cognitive resources!
+In the example above we see `subQ1` and `subQ2` - first we define them as subqueries. But later we treat them like normal tables. This is quite powerful because we only define them once and then don't have to think about them anymore. We can save cognitive resources!
 
 A typical use cases for `WITH`:
  - prepare raw data before using it
  - use a table multiple times
  - constants
  
-Where constants are a simple query without `FROM`. This is useful to quickly adjust analysis time frames (and it is faster than using a temporary function). Note, that we make use of the [table wildcard functionality](https://cloud.google.com/bigquery/docs/querying-wildcard-tables) here.
+Where constants are a simple query without `FROM`. This is useful to quickly adjust analysis time frames (and it is faster than using a temporary function). Note, that we make use of the [table wildcard functionality](https://cloud.google.com/bigquery/docs/querying-wildcard-tables) here which provides us the pseudo-column `_table_suffix`.
 
 ```sql
 WITH const AS (
@@ -47,6 +47,26 @@ WHERE
 
   -- short version: use _table_suffix within the subquery
   (SELECT _table_suffix BETWEEN startDate AND endDate FROM const) 
+GROUP BY
+  1
+```
+
+But this approach works with normal columns as well:
+
+```sql
+WITH const AS (
+  SELECT
+    date '2016-10-02' as startDate,
+    date '2016-10-03' as endDate
+)
+
+SELECT
+  EXTRACT(DATE from created_date) as date,
+  COUNT(complaint_type) complaints
+FROM
+  `bigquery-public-data.austin_311.311_service_requests`
+WHERE 
+  (SELECT EXTRACT(DATE from created_date) BETWEEN startDate AND endDate FROM const) 
 GROUP BY
   1
 ```
