@@ -1,7 +1,7 @@
 # General introduction
 
 ## Video: Analyzing Big Data in less time with Google BigQuery
-Get a quick overview of BigQuery in case you never saw it:
+Get a quick overview of BigQuery in case you've never seen it:
  - Build several highly-effective analytics solutions with Google BigQuery
  - Provide a clear road map of BigQuery capabilities
  - Explain how to quickly find answers and examples online
