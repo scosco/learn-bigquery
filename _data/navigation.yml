@@ -2,7 +2,7 @@ toc:
   - title: Foundation
     subfolderitems:
       - page: General Introduction
-        url: foundation/general-intro.html
+        url: foundation/general_intro.html
       - page: WITH
         url: foundation/WITH.html
       - page: Structs
