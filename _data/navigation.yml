@@ -8,16 +8,18 @@ toc:
       - page: Structs
         url: foundation/structs.html
       - page: Arrays
-        url: #
+        url: foundation/arrays.html
       - page: Subqueries
-        url: #
+        url: foundation/subqueries.html
       - page: Flatten
-        url: #
+        url: foundation/flatten.html
   - title: Google Analytics
     subfolderitems:
+      - page: Introduction
+        url: google-analytics/intro.html
       - page: Sessions
-        url: #
+        url: google-analytics/sessions.html
       - page: Hits
-        url: #
+        url: google-analytics/hits.html
       - page: Enhanced Ecommerce
-        url: #
+        url: google-analytics/eec.html
