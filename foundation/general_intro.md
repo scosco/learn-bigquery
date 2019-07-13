@@ -55,4 +55,4 @@ LIMIT 10
  - Because of the columnar data format, only two data fields need to be read from the storage (state, and year) in this query.
  - With a distributed file system, the workers read in chunks of the data in parallel, and apply the filter and aggregation. Shuffling may also occur between stages. The number of workers processing data at each stage is dynamically allocated according to the needs of the query.
  - The workers pass the data to the master in the final stage. The master does the final aggregation, sorting, limiting, and returning the data to the client.
-You can use the explanation function after you running to understand the execution of your own query: https://cloud.google.com/bigquery/query-plan-explanation
+You can use the [query plan explanation](https://cloud.google.com/bigquery/query-plan-explanation) after running the query to understand its execution.
