@@ -27,7 +27,7 @@
 	    {{ item.title }}: | 
 		{% for entry in item.subfolderitems %}
 		  <a href="{{ entry.url }}" target="_self"
-		     {% if {{entry.url | prepend "/"}} == page.url %}
+		     {% if page.url contains entry.url %}
 		     style="font-weight:bold;"
 		     {% endif %}
 		     >{{ entry.page }}</a> | 
