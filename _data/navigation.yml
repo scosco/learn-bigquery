@@ -25,3 +25,7 @@ toc:
         url: google-analytics/hits.html
       - page: Enhanced Ecommerce
         url: google-analytics/eec.html
+  - title: Misc
+    subfolderitems:
+      - page: Learning Path
+      - url: misc/learning-path.md
