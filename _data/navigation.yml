@@ -2,24 +2,24 @@ toc:
   - title: Foundation
     subfolderitems:
       - page: General Introduction
-        url: /foundation/general_intro.html
+        url: foundation/general_intro.html
       - page: WITH
-        url: /foundation/WITH.html
+        url: foundation/WITH.html
       - page: Structs
-        url: /foundation/structs.html
+        url: foundation/structs.html
       - page: Arrays
-        url: /foundation/arrays.html
+        url: foundation/arrays.html
       - page: Subqueries
-        url: /foundation/subqueries.html
+        url: foundation/subqueries.html
       - page: Flatten
-        url: /foundation/flatten.html
+        url: foundation/flatten.html
   - title: Google Analytics
     subfolderitems:
       - page: Introduction
-        url: /google-analytics/intro.html
+        url: google-analytics/intro.html
       - page: Sessions
-        url: /google-analytics/sessions.html
+        url: google-analytics/sessions.html
       - page: Hits
-        url: /google-analytics/hits.html
+        url: google-analytics/hits.html
       - page: Enhanced Ecommerce
-        url: /google-analytics/eec.html
+        url: google-analytics/eec.html
