@@ -11,6 +11,8 @@ toc:
         url: foundation/arrays.html
       - page: Subqueries
         url: foundation/subqueries.html
+      - page: Subqueries 2
+        url: foundation/subqueries2.html
       - page: Flatten
         url: foundation/flatten.html
   - title: Google Analytics
