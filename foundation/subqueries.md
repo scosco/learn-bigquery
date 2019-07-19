@@ -1,6 +1,6 @@
 # Subqueries: Arrays + `UNNEST()`
 
-`UNNEST()` turns your arrays into tables! That means you can run SQL on arrays!
+[`UNNEST()`](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#unnest) turns your arrays into tables! That means you can run SQL on arrays!
 
 You can start with this:
 ```sql
