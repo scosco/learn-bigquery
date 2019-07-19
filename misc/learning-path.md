@@ -1,12 +1,12 @@
 # Learning Path
 
-1. Foundation
+## Foundation
    1. master structs!
    2. master arrays!
    3. master structs in arrays!
    4. master `unnest()` and SQL on arrays! 
    5. master flattening a.k.a. joins on unnested arrays
-2. Google Analytics Data
+## Google Analytics Data
    1. master session scope
       - understand meaning of session scoped fields
       - run sub-queries on `customDimensions`
