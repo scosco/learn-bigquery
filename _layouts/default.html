@@ -24,16 +24,15 @@
 	  <nav style="background: white; padding:15px">
             <a href="#" target="_self">Start</a> <br>
             {% for item in site.data.navigation.toc %}
-	    {{ item.title }}: | 
+	    {{ item.title }}: <p>
 		{% for entry in item.subfolderitems %}
 		     {% if page.url contains entry.url %}
-		       <span style="font-weight:bold;">{{ entry.page }}</span> |
+		       <span style="font-weight:bold;">{{ entry.page }}</span> &nbsp;
 		     {% else %}
-   		       <a href="{{ entry.url }}" target="_self">{{ entry.page }}</a> |
+   		       <a href="{{ entry.url }}" target="_self">{{ entry.page }}</a> &nbsp;
 		     {% endif %}
-		      
 		{% endfor %}
-	      <br>
+	      </p>
 	  {% endfor %}
           </nav>
         </header>
