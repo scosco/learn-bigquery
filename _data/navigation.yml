@@ -28,4 +28,4 @@ toc:
   - title: Misc
     subfolderitems:
       - page: Learning Path
-      - url: misc/learning-path.md
+        url: misc/learning-path.md
