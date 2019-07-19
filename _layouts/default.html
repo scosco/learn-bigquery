@@ -26,11 +26,12 @@
             {% for item in site.data.navigation.toc %}
 	    {{ item.title }}: | 
 		{% for entry in item.subfolderitems %}
-		  <a href="{{ entry.url }}" target="_self"
 		     {% if page.url contains entry.url %}
-		     style="font-weight:bold;"
+		       <span style="font-weight:bold;">{{ entry.page }}</span> |
+		     {% else %}
+   		       <a href="{{ entry.url }}" target="_self">{{ entry.page }}</a> |
 		     {% endif %}
-		     >{{ entry.page }}</a> | 
+		      
 		{% endfor %}
 	      <br>
 	  {% endfor %}
