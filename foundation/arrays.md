@@ -1,4 +1,5 @@
 # Arrays
+*A little note before we start: It is expected you follow along in BigQuery so you see the output of all the queries shown here.* 
 
 Knowing how to deal with nested arrays is key when using BigQuery! But what is an array?
 It's an ordered list of things - as per convention you list these things between `[` and `]`.
@@ -36,13 +37,11 @@ The easiest way to access an element is by using either [`OFFSET()`](https://clo
 Run the following code:
 ```sql
 WITH t AS (
-  SELECT
-    *
-  FROM UNNEST([
-      STRUCT(1 AS id, [1,2,3] AS arr),
-      STRUCT(2 AS id, [4,5,6] AS arr),
-      STRUCT(3 AS id, [42] AS arr)
-    ])
+  SELECT 1 AS id, [1,2,3] AS arr
+  UNION ALL
+  SELECT 2 AS id, [4,5,6] AS arr
+  UNION ALL
+  SELECT 3 AS id, [42] AS arr
   )
    
 SELECT
@@ -103,13 +102,11 @@ But be careful with reversing arrays, it slows down your query execution.
 Concatenating arrays is achieved by using the function [`ARRAY_CONCAT_AGG()`](https://cloud.google.com/bigquery/docs/reference/standard-sql/functions-and-operators#array_concat_agg) or [`ARRAY_CONCAT()`](https://cloud.google.com/bigquery/docs/reference/standard-sql/functions-and-operators#array_concat), depending on whether you want to aggregate rows (as in GROUP BY) or operate without aggregation of rows:
 ```sql
 WITH t AS (
-  SELECT
-    *
-  FROM UNNEST([
-      STRUCT(1 AS id, [1,2,3] AS arr),
-      STRUCT(2 AS id, [4,5,6] AS arr),
-      STRUCT(3 AS id, [42] AS arr)
-    ])
+  SELECT 1 AS id, [1,2,3] AS arr
+  UNION ALL
+  SELECT 2 AS id, [4,5,6] AS arr
+  UNION ALL
+  SELECT 3 AS id, [42] AS arr
   )
    
 SELECT
