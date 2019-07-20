@@ -1,4 +1,5 @@
 # Subqueries: Arrays + UNNEST()
+*A little note before we start: It is expected you follow along in BigQuery so you see the output of all the queries shown here.* 
 
 Nested data can look a bit scary at first - how are we supposed to get information from these arrays? A lot of poeple learn about the flattening "trick" quite early and use it as a one-size-fits-all solution. But there might be a neater way to approach those arrays!
 
