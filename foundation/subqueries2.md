@@ -1,4 +1,5 @@
 # Subqueries on a table
+*A little note before we start: It is expected you follow along in BigQuery so you see the output of all the queries shown here.* 
 
 ## Preparation
 First we need to create a table on which we can run queries. For that we use a WITH statement to create a temporary table from a `select`.
