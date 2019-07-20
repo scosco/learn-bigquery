@@ -57,8 +57,6 @@ Row | id | firstElem | firstElemOrd
 2 | 2 | 4  | 4
 3 | 3 | 42 | 42
 
-[`UNNEST()`](https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax#unnest)  takes an array as input and turns it into table format. The biggest change is the destruction of the order of elements.
-
 ## Safe Offset - Avoid "Out of Bounds" Error
 If you tried to access an object that is not there, you'll get this error: `Error: Array index 2 is out of bounds (overflow)`
 To avoid that you can either change your method to access that element and/or use the prefix SAFE_ with your OFFSET function:
