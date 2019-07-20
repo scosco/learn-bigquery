@@ -12,3 +12,18 @@ You should be familiar with all of these concepts:
 - Subqueries on unnested arrays in tables
 - Flatten tables
 - Combinations of these concepts
+
+## Example
+
+Here's an example query to get started
+
+```sql
+SELECT 
+  date,
+  SUM(totals.visits) as sessions,
+  COUNT(DISTINCT fullvisitorid) as visitors,
+  SUM(totals.totalTransactionRevenue)/1000000 as revenue
+FROM `bigquery-public-data.google_analytics_sample.ga_sessions_20170801` 
+GROUP BY 1
+LIMIT 1000
+```
