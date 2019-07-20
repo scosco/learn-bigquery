@@ -28,12 +28,16 @@ Concepts focus on the data structure, not the possible settings of the tool:
 * Events and event_params
 * tbd ...
 
-## Example
+## Prerequisites
 
-```sql
-SELECT
-  column
-FROM
-  table
-WHERE column = 'test'
-```
+There plenty of SQL courses out there. You can have a look at [w3schools.com/sql/](https://www.w3schools.com/sql/) and revisit some of its contents if necessary.
+
+Analytical SQL concepts can be categorized roughly as follows (brackets indicate expertise needed for this training):
+
+- Retrieve data from a table (proficient)
+- Aggregate Data (proficient)
+  - Aggregation functions
+  - Aggregation in combination with Grouping
+- Analytical functions with Windows (nice to have)
+- Combine tables using Joins and Unions (strong)
+- Combinations of all the concepts above (strong)
