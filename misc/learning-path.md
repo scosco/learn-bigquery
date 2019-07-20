@@ -20,8 +20,10 @@
    - flatten with cross join
    - flatten with left join
    - flatten within a subquery
+   
 ## Google Analytics Data
- - master session scope
+
+ - ### master session scope
    - understand meaning of session scoped fields - build a case per struct, e.g. retrieve information from `device` and explain what it means, as in: interpret the numbers
    - understand main metrics: sessions (all versions), visitors, all things from `totals`
    - run sub-queries on `customDimensions`
