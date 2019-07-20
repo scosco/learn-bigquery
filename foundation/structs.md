@@ -1,4 +1,6 @@
 # Mastering Structs
+*A little note before we start: It is expected you follow along in BigQuery so you see the output of all the queries shown here.* 
+
 ## Structs and JSON
 
 Structs are lists of key-value pairs with a fixed length. They are a rather simple concept: you come up with some names for the fields and assign some values. We'll see later that we can use them to introduce columns in sub-tables. But first things first ...
