@@ -20,6 +20,7 @@ So, basically we create our own temporary tables (on run-time only) using querie
 
 # Using WITH to Test and Learn
 *A little note before we start: It is expected you follow along in BigQuery so you see the output of all the queries shown here.* 
+
 We will use `WITH` mostly to create little exercise tables. And this is something you should do every time you want to test something in or learn about SQL. It saves resources and keeps things at a managable level.
 
 For examle, imagine you want to create a little table with two rows to understand how the function `concat()` works in a table environment. You'd start by writing a temporary table with some sample data:
