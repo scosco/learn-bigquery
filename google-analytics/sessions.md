@@ -12,7 +12,7 @@ fullVisitorId | STRING | The unique visitor ID (also known as client ID).
 ~~visitorId~~ | NULL | This field is **deprecated**. Use *fullVisitorId* instead.
 userId | STRING | Overridden User ID sent to Analytics.
 visitNumber | INTEGER | The session number for this user. If this is the first session, then this is set to 1.
-visitId | INTEGER | An identifier for this session. This is part of the value usually stored as the _utmb cookie. This is only unique to the user. For a completely unique ID, you should use a combination of fullVisitorId and visitId.
+visitId | INTEGER | An identifier for this session. This is part of the value usually stored as the \_utmb cookie. This is only unique to the user. For a completely unique ID, you should use a combination of fullVisitorId and visitId.
 visitStartTime | INTEGER | The timestamp (expressed as POSIX time).
 date | STRING | The date of the session in YYYYMMDD format.
 socialEngagementType | STRING | Engagement type, either "Socially Engaged" or "Not Socially Engaged".
@@ -28,7 +28,7 @@ The struct `totals` contains aggregations of the whole session and fields for co
 Field Name | Data Type | Description
 ---- | ---- | ----
 totals | RECORD | This section contains aggregate values across the session.
-totals.bounces | INTEGER | Total bounces (for convenience). For a bounced session, the value is 1, otherwise it is null.
+totals.bounces | INTEGER | Total bounces (for convenience). For a bounced session, the value is 1, otherwise it is null.  ` SELECT SUM( totals.bounces ) / SUM(totals.visits) AS bounceRate` ...
 totals.hits | INTEGER | Total number of hits within the session.
 totals.newVisits | INTEGER | Total number of new users in session (for convenience). If this is the first visit, this value is 1, otherwise it is null.
 totals.pageviews | INTEGER | Total number of pageviews within the session.
