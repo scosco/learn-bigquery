@@ -35,6 +35,10 @@
    - flatten to hit scope
    - understand when to do what: flatten vs. sub-query (applicable to all arrays) - build a case
    - run sub-queries on `hits.customDimensions` (2 ways: 1. from hits scope and 2. from session scope)
+ - ### master promotion scope
+   - understand meta-field `promotionActionInfo` - build a case
+   - run sub-queries on `promotion` from `hits`
+   - run sub-queries on `promotion` from session scope
  - ### master product scope
    - understand meta-infos from `hits` scope: `ecommerceAction` and `transaction` - build a case each
    - understand main metrics: products, qty products, price, revenue, build cases and explain them
@@ -42,8 +46,5 @@
    - run sub-queries on `hits.product` from session scope (2 methods: 1. nested sub-queries and 2. flattening within sub-query)
    - flatten to `product` scope
    - run sub-queries on `hits.product.customDimensions` (3 ways: from session, hits and product scope; mixed methods: nested sub-queries and/or flattening)
- - ### master promotion scope
-   - understand meta-field `promotionActionInfo` - build a case
-   - run sub-queries on `promotion` from `hits`
-   - run sub-queries on `promotion` from session scope
+
 
