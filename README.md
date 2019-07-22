@@ -1,3 +1,5 @@
+[https://scosco.github.io/learn-bigquery/](https://scosco.github.io/learn-bigquery/)
+
 # Learn BigQuery!
 Assuming Standard SQL is known, this material aims to provide a path to master SQL in semi-structured nested data.
 
